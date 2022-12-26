@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:contents="clr-namespace:MauiTodoApp.Views.Contents"
+             x:Class="MauiTodoApp.Views.Contents.TasksContent">
+    <Border 
+        Margin="15, 5, 15, 8"
+        StrokeThickness="0"
+        Stroke="#e5e7eb"
+        HeightRequest="60">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="12"/>
+        </Border.StrokeShape>
+        <Grid BackgroundColor="#ffffff" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" VerticalOptions="Center" WidthRequest="50">
+                    <Border 
+                    BackgroundColor="#b3e0fa"
+                    StrokeThickness="0"
+                    HeightRequest="30"
+                    WidthRequest="30">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12"/>
+                        </Border.StrokeShape>
+                    </Border>
+                </Grid>
+                <Grid Grid.Column="1" VerticalOptions="Center">
+                    <Label FontSize="18">
+                        Task 1
+                    </Label>
+                </Grid>
+                <Grid Grid.Column="2">
+                    <Border 
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Stroke="#b6e2ff"
+                        StrokeThickness="2"
+                        WidthRequest="14" HeightRequest="14">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="7"/>
+                        </Border.StrokeShape>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</ContentView>

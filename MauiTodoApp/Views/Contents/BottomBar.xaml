@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTodoApp.Views.Contents.BottomBar">
+    <Border StrokeThickness="0"
+                    BackgroundColor="LightBlue"
+                    Margin="10, 5, 10, 10">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="10"/>
+        </Border.StrokeShape>
+        <Grid Margin="20, 0, 20, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Page1Clicked"
+                                      NumberOfTapsRequired="1"/>
+                </Grid.GestureRecognizers>
+
+                <Border HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="AliceBlue"
+                        StrokeThickness="0"
+                        >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="5"/>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="1" FontSize="30"/>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Page2Clicked"
+                                      NumberOfTapsRequired="1"/>
+                </Grid.GestureRecognizers>
+
+                <Border HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="AliceBlue"
+                        StrokeThickness="0"
+                        >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="5"/>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="2" FontSize="30"/>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Page3Clicked"
+                                      NumberOfTapsRequired="1"/>
+                </Grid.GestureRecognizers>
+
+                <Border HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="AliceBlue"
+                        StrokeThickness="0"
+                        >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="5"/>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="3" FontSize="30"/>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Grid.Column="3">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Page4Clicked"
+                                      NumberOfTapsRequired="1"/>
+                </Grid.GestureRecognizers>
+
+                <Border HeightRequest="50"
+                        WidthRequest="50"
+                        BackgroundColor="AliceBlue"
+                        StrokeThickness="0"
+                        >
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="5"/>
+                    </Border.StrokeShape>
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Label Text="4" FontSize="30"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</ContentView>

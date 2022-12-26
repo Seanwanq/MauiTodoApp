@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTodoApp.Views.TodoMainPage"
+             xmlns:Pages="clr-namespace:MauiTodoApp.Views.Pages"
+             xmlns:contents="clr-namespace:MauiTodoApp.Views.Contents"
+             Title="TodoMainPage">
+    <Grid IgnoreSafeArea="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.RowSpan="2" ZIndex="0" x:Name="MainPageView">
+            <Pages:FirstPage Grid.Row="0" Grid.RowSpan="2" ZIndex="0"/>
+        </Grid>
+        <Grid  Grid.Row="1" ZIndex="1">
+            <contents:BottomBar/>
+        </Grid>
+
+    </Grid>
+</ContentPage>
