@@ -6,11 +6,11 @@
     <Grid Background="#e5e7eb">
         <Grid Margin="10, 0, 10, 0">
             <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
-            <Label Text="Today's Tasks"
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Label Text="Today's Tasks"
                    Margin="10, 10, 10, 10"
                    Padding="0, 40, 0, 0"
                    HorizontalOptions="Start"
@@ -18,38 +18,25 @@
                    FontSize="30"
                    FontAttributes="Bold"
                    />
-        </Grid>
-        <ScrollView Grid.Row="1" Margin="10, 0, 10, 0">
-            <StackLayout Grid.Row="1"  >
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-                <Contents:TasksContent/>
-
-                <Grid HeightRequest="90"></Grid>
-
-            </StackLayout>
-
-        </ScrollView>
-
-        </Grid>
             </Grid>
+            <ScrollView Grid.Row="1" Margin="10, 0, 10, 0">
+                <StackLayout Grid.Row="1"  >
+                    <Contents:TasksContent TaskTitle="Task1"/>
+                    <Contents:TasksContent TaskTitle="Task2"/>
+                    <Contents:TasksContent TaskTitle="Task3"/>
+                    <Contents:TasksContent TaskTitle="Task4"/>
+                    <Contents:TasksContent TaskTitle="Task5"/>
+                    <Contents:TasksContent TaskTitle="Task6"/>
+                    <Contents:TasksContent TaskTitle="Task7"/>
+                    <Contents:TasksContent TaskTitle="Task8"/>
+                    <Contents:TasksContent TaskTitle="Task9"/>
+                    <Contents:TasksContent TaskTitle="Task10"/>
+                    <Contents:TasksContent TaskTitle="Task11"/>
+
+                 
+                    <Grid HeightRequest="90"></Grid>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </Grid>
 </ContentView>

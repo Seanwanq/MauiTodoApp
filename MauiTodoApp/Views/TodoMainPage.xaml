@@ -4,17 +4,20 @@
              x:Class="MauiTodoApp.Views.TodoMainPage"
              xmlns:Pages="clr-namespace:MauiTodoApp.Views.Pages"
              xmlns:contents="clr-namespace:MauiTodoApp.Views.Contents"
+             x:Name="this"
              Title="TodoMainPage">
-    <Grid IgnoreSafeArea="True">
+    <Grid IgnoreSafeArea="{OnPlatform Android=true, iOS=true, WinUI=true}"
+          BindingContext="{x:Reference this}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Grid.RowSpan="2" ZIndex="0" x:Name="MainPageView">
-            <Pages:FirstPage Grid.Row="0" Grid.RowSpan="2" ZIndex="0"/>
+            <!--<Pages:FirstPage Grid.Row="0" Grid.RowSpan="2" ZIndex="0" IsVisible="true"/>
+            <Pages:SecondPage Grid.Row="0" Grid.RowSpan="2" ZIndex="0" IsVisible="false"/>-->
         </Grid>
         <Grid  Grid.Row="1" ZIndex="1">
-            <contents:BottomBar/>
+            <contents:BottomBar x:Name="bottomBar"/>
         </Grid>
 
     </Grid>

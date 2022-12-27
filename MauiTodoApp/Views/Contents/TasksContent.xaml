@@ -2,8 +2,10 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:contents="clr-namespace:MauiTodoApp.Views.Contents"
+             x:Name="this"
              x:Class="MauiTodoApp.Views.Contents.TasksContent">
     <Border 
+        BindingContext="{x:Reference this}"
         Margin="15, 5, 15, 8"
         StrokeThickness="0"
         Stroke="#e5e7eb"
@@ -30,8 +32,8 @@
                     </Border>
                 </Grid>
                 <Grid Grid.Column="1" VerticalOptions="Center">
-                    <Label FontSize="18">
-                        Task 1
+                    <Label FontSize="18" 
+                           Text="{Binding TaskTitle, FallbackValue='Task Title'}">
                     </Label>
                 </Grid>
                 <Grid Grid.Column="2">

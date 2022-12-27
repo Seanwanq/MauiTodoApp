@@ -1,8 +1,8 @@
 namespace MauiTodoApp.Views.Pages;
 
-public partial class SecondPage : ContentView
+public partial class ThirdPage : ContentView
 {
-	public SecondPage()
+	public ThirdPage()
 	{
 		InitializeComponent();
 	}
